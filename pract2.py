@@ -1,40 +1,23 @@
-def sayHello():
-    print("Hello World")
+from math import *
 
 
-def sayHello2():
-    print("Hello")
-    print("World")
+def heightOfTriangle():
+    base = float(input("Enter base: "))
+    angleInDegrees = float(input("Enter angle: "))
+
+    angleInRadians = radians(angleInDegrees)
+    height = base * tan(angleInRadians)
+    print("Height of triangle: ", round(height, 2))
 
 
-def sayBye():
-    print("Goodbye Mars")
+def distanceBetweenPoints():
+    x1 = float(input("Enter x1: "))
+    y1 = float(input("Enter y1: "))
+    x2 = float(input("Enter x2: "))
+    y2 = float(input("Enter y2: "))
 
+    distance = sqrt((x2 - x1)**2 + (y2 - y1)**2)
+    print("Distance between points: ", round(distance, 2))
 
-# TODO: Write `sayBye2` function here
-
-
-# A simple kilograms to ounces conversion program
-# It asks for a weight in kilograms (for example 10)
-# and converts it to ounces (352.74)
-def kilos2Ounces():
-    kilos = float(input("Enter a weight in kilograms: "))
-    ounces = kilos * 35.274
-    print("The weight in ounces is", ounces)
-
-
-def count():
-    for number in range(10):
-        print("Number is now: ", number)
-
-
-# A simple euros to pounds conversion program
-# It asks for a value in euros (for example 10)
-# and converts it to pounds (8.7)
-def euros2Pounds():
-    euros = float(input("Enter a value in euros: "))
-    pounds = euros * 0.87
-    print("The value in pounds is", pounds)
-
-
-# TODO: Write `dollars2Pounds` and the rest of your solutions for the programming exercises here
+# TODO: Add your solutions to the programming exercises here.
+# Remember that the `math` module is already imported for you (do not import it again!)
