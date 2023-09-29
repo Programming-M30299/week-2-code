@@ -19,5 +19,5 @@ def distanceBetweenPoints():
     distance = math.sqrt((x2 - x1)**2 + (y2 - y1)**2)
     print("Distance between points: ", round(distance, 2))
 
-# TODO: Add your solutions to the programming exercises here.
+# Add your solutions to the programming exercises here.
 # Remember that the `math` module is already imported for you (do not import it again!)
