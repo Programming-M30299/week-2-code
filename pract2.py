@@ -1,13 +1,14 @@
 import math
 
 
-def heightOfTriangle():
-    base = float(input("Enter base: "))
-    angleInDegrees = float(input("Enter angle: "))
+def slopeOfLine():
+    x1 = float(input("Enter x1: "))
+    y1 = float(input("Enter y1: "))
+    x2 = float(input("Enter x2: "))
+    y2 = float(input("Enter y2: "))
 
-    angleInRadians = math.radians(angleInDegrees)
-    height = base * math.tan(angleInRadians)
-    print("Height of triangle: ", round(height, 2))
+    slope = (y2 - y1) / (x2 - x1)
+    print("Slope of line: ", round(slope, 2))
 
 
 def distanceBetweenPoints():
