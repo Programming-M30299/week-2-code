@@ -1,24 +1,23 @@
 import math
 
 
-def slopeOfLine():
-    x1 = float(input("Enter x1: "))
-    y1 = float(input("Enter y1: "))
-    x2 = float(input("Enter x2: "))
-    y2 = float(input("Enter y2: "))
+def squareRootCalculator():
+    num = float(input("Enter a non-negative number: "))
+    if num < 0:
+        print("Square root is undefined for negative numbers.")
+    else:
+        sqrtValue = math.sqrt(num)
+        print("Square root:", round(sqrtValue, 2))
 
-    slope = (y2 - y1) / (x2 - x1)
-    print("Slope of line: ", round(slope, 2))
 
+def sineAndCosine():
+    angle = float(input("Enter an angle in degrees: "))
+    angleInRadians = math.radians(angle)  # converts degrees to radians
+    sineValue = math.sin(angleInRadians)
+    cosineValue = math.cos(angleInRadians)
+    print("Sine of the angle:", round(sineValue, 2))
+    print("Cosine of the angle:", round(cosineValue, 2))
 
-def distanceBetweenPoints():
-    x1 = float(input("Enter x1: "))
-    y1 = float(input("Enter y1: "))
-    x2 = float(input("Enter x2: "))
-    y2 = float(input("Enter y2: "))
-
-    distance = math.sqrt((x2 - x1)**2 + (y2 - y1)**2)
-    print("Distance between points: ", round(distance, 2))
 
 # Add your solutions to the programming exercises here.
 # Remember that the `math` module is already imported for you (do not import it again!)
